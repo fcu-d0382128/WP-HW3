@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Datbase</title>
+
+
+  </head>
+  <body>
+    <script>
+      var celsius , fahrenhet;
+      celsius = window.prompt("Enter celsius degree");
+      fahrenhet = transform(celsius);
+     
+      function transform(celsius) {
+        celsius = parseFloat(celsius); 
+        fahrenhet = celsius * (9 / 5) + 32; 
+        return fahrenhet;
+      } 
+      
+      /*攝氏*(9/5)+32*/
+
+      document.writeln("<h1>" + fahrenhet +" degree Fahrenhet </h1>");
+      function myFunction() {
+        location.reload();
+      }
+    </script>
+  <button onclick="myFunction()">Reload page</button>
+  </body>
+</html>
